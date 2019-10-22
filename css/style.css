@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+@import url('https://fonts.googleapis.com/css?family=Share');
+
+:root {
+    --dot-border: rgba(18, 18, 19, 0.21);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    text-align: center;
+    background: var(--background-color, #31b0d5);
+    padding: 20px 0;
+    position: relative;
+}
+
+.header__api {
+    color: #fff;
+    font-family: 'Monoton', 'Helvetica', 'sans-serif';
+}
+
+.header__dot:nth-child(1n) {
+    position: absolute;
+    right: 2%;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #009688;
+    bottom: 33%;
+    border: 1px solid var(--dot-border);
+}
+
+.header__dot:nth-child(2n) {
+    position: absolute;
+    right: 5%;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #673ab7ed;
+    bottom: 33%;
+    border: 1px solid var(--dot-border);
+}
+
+.analyze {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.analyze__header {
+    padding: 30px 0;
+    font-family: 'Share', 'Helvetica', 'sans-serif';
+    text-decoration: underline;
+    color: var(--background-color, #31b0d5);
+}
+
+.analyze__input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px #292b2c solid;
+    outline: none;
+    margin-top: 15px;
+    min-width: 400px;
+    font-family: 'Share', 'Helvetica', 'sans-serif';
+}
+
+.analyze__input:focus {
+    border-bottom: 2px var(--background-color, #31b0d5) solid;
+    transition: all 0.2s ease-in-out;
+}
+
+.analyze__button {
+    border: none;
+    border-radius: 3px;
+    padding: 13px 13px;
+    margin-left: 15px;
+    color: #fff;
+    background: var(--background-color, #31b0d5);
+    font-family: 'Monoton', 'Helvetica', 'sans-serif';
+    font-size: 22px;
+}
+
+.analyze__button:hover {
+    background: var(--background-color, #31b0d5);
+    transition: all 0.3s ease-in;
+}
+
+.image-area {
+    text-align: center;
+}
+
+.image-area__header {
+    margin: 50px 0;
+    font-family: 'Share', 'Helvetica', 'sans-serif';
+    font-size: 42px;
+}
+
+.result {
+    text-align: center;
+    margin: 50px 0;
+    font-family: 'Share', 'Helvetica', 'sans-serif';
+    font-size: 42px;
+}
+
+#text {
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Share', 'Helvetica', 'sans-serif';
+}
+
+.image-area #image {
+    width: 60vw;
+    margin: 0 auto;
+    padding-top: 20px;
+    border-top: 5px solid var(--background-color, #31b0d5);
+}

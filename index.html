@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Face Api</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__api">Face api</h1>
+        <span class="header__dot"></span>
+        <span class="header__dot"></span>
+    </header>
+    <div class="analyze">
+        <h3 class="analyze__header">Enter Image URL</h3>
+        <input class="analyze__input" id="imageLink" type="text" />
+        <button class="analyze__button" id="btn">Analyze</button>
+    </div>
+    <div class="image-area">
+        <h3 class="image-area__header">Your image</h3>
+        <div id="image"></div>
+    </div>
+    <div>
+        <h3 class="result">Result:</h3>
+        <p id="text"></p>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
